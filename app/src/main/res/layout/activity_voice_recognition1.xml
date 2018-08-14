@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="bottom"
+        android:background="@android:color/black">
+
+        <Button
+            android:id="@+id/toggleButton1"
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            android:layout_gravity="right"
+            android:onClick="start"
+            android:src="@drawable/ic_mic_24dp"
+            android:visibility="invisible" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/black">
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/scroller"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            android:fillViewport="true">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:scrollbars="vertical"
+                android:textColor="@android:color/white"
+                android:textSize="23sp" />
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <com.example.surbhit.myapplication.ScrollTextView
+        android:id="@+id/scrolltext"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="415dp"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:paddingBottom="5dp" />
+
+</RelativeLayout>
